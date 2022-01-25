@@ -4,7 +4,8 @@ import StimulusReflex from 'stimulus_reflex'
 
 import consumer from '../channels/consumer'
 application.consumer = consumer
-
+import ExampleController from './example_controller'
+application.register('example', ExampleController)
 import controller from '../controllers/application_controller'
 StimulusReflex.initialize(application, { controller, isolate: true })
 

@@ -6,3 +6,7 @@
 
 <button data-reflex="click">Refresh</button>
 <sl-button data-reflex="click->Example#foo">Check the browser console</sl-button>
+
+<div data-controller="example">
+  <sl-color-picker id="color-picker2" format="hex" data-color="<%= @color %>" data-value="<%= @color %>" value="<%= @color %>" data-action="click->example#change"></sl-color-picker>
+</div>
